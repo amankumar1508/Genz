@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet'
 
 const stats = [
   { value: '5+', label: 'Years of Experience' },
@@ -44,6 +45,13 @@ export default function Aboutdetails() {
 
       {/* Hero Section */}
       <section className="pt-40 pb-20 px-6 sm:px-12 md:px-24 lg:px-40 text-center bg-amber-50">
+        <Helmet>
+          <title>About Us - Gen-Z Creative Agency</title>
+          <meta
+            name="description"
+            content="Learn about Gen-Z, a creative-tech agency that builds bold digital experiences for the next generation of brands."
+          />
+        </Helmet>
         <span className="inline-block bg-amber-100 text-amber-500 text-sm font-semibold px-4 py-1 rounded-full mb-6 tracking-wide uppercase">
           Who We Are
         </span>

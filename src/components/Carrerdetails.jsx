@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Helmet } from 'react-helmet';
 
 const jobData = [
   {
@@ -39,9 +39,19 @@ export default function Carrerdetails() {
   return (
     
     <section className="text-white text-xl border-2 justify-baseline m-12 mb-81">
+      
       <h1 className="text-2xl text-center mb-8 text underline font-black mt-39 text-amber-500  ">
         Job Opportunities 🚀
       </h1>
+
+      <Helmet>
+                <title>Carrer info - Gen-Z Creative Agency</title>
+                <meta
+                  name="description"
+                  content="Learn about Gen-Z, a creative-tech agency that builds bold digital experiences for the next generation of brands."
+                />
+              </Helmet>
+      
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {jobs.map((job, index) => (

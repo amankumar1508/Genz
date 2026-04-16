@@ -1,6 +1,7 @@
 import React from 'react'
 import { Formik, useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Helmet } from 'react-helmet';
 
 export default function Contactform() {
 
@@ -52,6 +53,14 @@ export default function Contactform() {
   });
   return (
     <div>
+
+      <Helmet>
+          <title>ContactUs - Gen-Z Creative Agency</title>
+          <meta
+            name="description"
+            content="Talk about your ideas or inquire about our services."
+          />
+        </Helmet>
 
       {/* Hero Section with full image */}
       <div
